@@ -1,7 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #e60e7a;
+    /* background: #e60e7a; */
     /* background: #f99; */
+    background-image: url(../images/background.png);
 }
 
 h1 {

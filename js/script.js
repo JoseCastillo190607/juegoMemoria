@@ -24,6 +24,7 @@ class MemoryGame {
 
     startGame() {
 
+        this.play = false;
         this.foundPairs = 0;
         this.setNewOrder();
         this.setImagesInCards();
@@ -95,8 +96,8 @@ class MemoryGame {
         }
 
     }
-
-    checkPair(image) {
+    
+    checkPair(image,itsPair,itsNotPair) {
 
         if (!this.card1) this.card1 = image;
         else this.card2 = image;
@@ -107,13 +108,17 @@ class MemoryGame {
 
                 this.play = false;
                 setTimeout(this.checkIfWon.bind(this), 300)
-                
             }
             else {
 
                 this.play = false;
                 setTimeout(this.resetOpenedCards.bind(this), 800)
-
+             //  if(itsNotPair){
+                // image.classList.remove('front');
+              //  var frontPair = document.getElementsById("frontPair")
+                // this.card1.classList.remove('frontPair')
+               // img.classList.add('frontNotPair');
+           // }
             }
 
         }
@@ -127,7 +132,7 @@ class MemoryGame {
 
         firstOpened.classList.remove("opened");
         secondOpened.classList.remove("opened");
-
+        
         this.card1 = null;
         this.card2 = null;
 
@@ -145,7 +150,7 @@ class MemoryGame {
 
         if (this.maxPairNumber == this.foundPairs) {
 
-            alert("¡Ganaste!");
+            alert("¡Felicidades, Ganaste.....Ahora eres un MonkeyLover!");
             this.setNewGame();
             
         }

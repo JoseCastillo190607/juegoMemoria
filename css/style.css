@@ -63,5 +63,41 @@ figure .searched-image {
 
 .front{
     width: 240px;
-    height: 390px;
+    height: 319px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px blue;
 }
+
+#frontPair{
+    width: 240px;
+    height: 319px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px rgb(66, 242, 66);
+}
+
+#frontNotPair{
+    width: 240px;
+    height: 319px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px rgb(242, 66, 66);
+}
+
+
